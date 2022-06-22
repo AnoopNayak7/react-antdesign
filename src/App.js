@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Tabs from "./Components/Tabs";
+import Tabswitharrows from "./Components/Tabswitharrows";
+import DatePikerComponent from "./Components/DatePikerComponent";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div style={{ "margin-left": "100px", "margin-right": "100px" }}>
+        <Tabs />
+        <hr />
+        <DatePikerComponent />
+      </div>
+    </>
   );
 }
 
